@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_show_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cosplay.demo.mvp.view.ShowMainActivity">
+    <LinearLayout
+        android:id="@+id/lin_query"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:id="@+id/bt_query_weather"
+            android:text="查询"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/et_query_weather"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_below="@id/lin_query"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/yv_showmain"></TextView>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bar_query"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>
