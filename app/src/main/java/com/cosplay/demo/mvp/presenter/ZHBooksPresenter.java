@@ -1,16 +1,20 @@
 package com.cosplay.demo.mvp.presenter;
 
 import android.os.Handler;
+import android.util.Log;
 
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
-import com.cosplay.demo.mvp.bean.FHnews;
 import com.cosplay.demo.mvp.bean.ZhiHuBook;
 import com.cosplay.demo.mvp.view.IView.IBookFragmentView;
 import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+import com.orhanobut.logger.Logger;
 
-import static com.cosplay.demo.mvp.DdemoApplication.getApp;
+import timber.log.Timber;
+
+import static com.cosplay.demo.mvp.app.DdemoApplication.getApp;
 
 /**
  * Created by zhiwei.wang on 2017/3/23.
@@ -30,6 +34,7 @@ public class ZHBooksPresenter {
                 StringRequest stringRequest = new StringRequest(ZHBOOKS_URL, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String s) {
+                        Timber.i("dddddddddd","fsdfgdff");
                         Gson gson = new Gson();
                         ZhiHuBook zhihu = gson.fromJson(s, ZhiHuBook.class);
                         iBookFragmentView.Success(zhihu);

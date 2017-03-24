@@ -2,7 +2,6 @@ package com.cosplay.demo.mvp.presenter;
 
 import android.os.Handler;
 
-import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
@@ -10,7 +9,7 @@ import com.cosplay.demo.mvp.bean.FHnews;
 import com.cosplay.demo.mvp.view.IView.IFHnewsView;
 import com.google.gson.Gson;
 
-import static com.cosplay.demo.mvp.DdemoApplication.getApp;
+import static com.cosplay.demo.mvp.app.DdemoApplication.getApp;
 
 /**
  * Created by zhiwei.wang on 2017/3/23.

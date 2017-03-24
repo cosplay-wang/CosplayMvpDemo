@@ -12,12 +12,14 @@ import com.cosplay.demo.mvp.adapter.FragmentViewPagerAdapter;
 import com.cosplay.demo.mvp.view.fragment.BaseFragment;
 import com.cosplay.demo.mvp.view.fragment.Book2Fragment;
 import com.cosplay.demo.mvp.view.fragment.BookFragment;
+import com.orhanobut.logger.Logger;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import timber.log.Timber;
 
 public class ZhiHuActivity extends AppCompatActivity {
     FragmentManager fragmentManager;
@@ -33,6 +35,8 @@ public class ZhiHuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_zhi_hu);
         ButterKnife.bind(this);
+
+        Timber.v("bbbdgd","ffffffffffffffffffffffff");
         fragmentManager = getSupportFragmentManager();
         BookFragment bookFragment = new BookFragment();
         Book2Fragment bookFragment2 = new Book2Fragment();

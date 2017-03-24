@@ -17,6 +17,7 @@ import com.cosplay.demo.mvp.view.IView.IBookFragmentView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import timber.log.Timber;
 
 public class Book2Fragment extends BaseFragment implements IBookFragmentView{
 
@@ -29,7 +30,6 @@ public class Book2Fragment extends BaseFragment implements IBookFragmentView{
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        Log.i("dddddddddddd","11111111111eeeeeeeeeeeeeeeee");
         View view = inflater.inflate(R.layout.activity_fhnews, container, false);
         ButterKnife.bind(this, view);
 
